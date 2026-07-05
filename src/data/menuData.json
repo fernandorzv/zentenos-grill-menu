@@ -1,0 +1,409 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-07-05T00:00:00Z",
+  "effectiveDate": "2026-07-05",
+  "restaurant": {
+    "id": "zentenos-grill",
+    "name": "Zenteno's Grill",
+    "tagline": "Asado al Carbón",
+    "phone": "7775041335",
+    "whatsappNumber": "7775041335",
+    "address": "[Your restaurant address]",
+    "serviceHours": [
+      {
+        "dayOfWeek": "Monday",
+        "isOpen": false
+      },
+      {
+        "dayOfWeek": "Tuesday",
+        "isOpen": false
+      },
+      {
+        "dayOfWeek": "Wednesday",
+        "isOpen": false
+      },
+      {
+        "dayOfWeek": "Thursday",
+        "isOpen": false
+      },
+      {
+        "dayOfWeek": "Friday",
+        "isOpen": true,
+        "openTime": "18:00",
+        "closeTime": "22:00"
+      },
+      {
+        "dayOfWeek": "Saturday",
+        "isOpen": true,
+        "openTime": "18:00",
+        "closeTime": "22:00"
+      },
+      {
+        "dayOfWeek": "Sunday",
+        "isOpen": false
+      }
+    ],
+    "timezone": "America/Mexico_City",
+    "currency": "MXN",
+    "kitchenOpenTime": "18:00",
+    "kitchenCloseTime": "21:30",
+    "averagePrepTime": 15
+  },
+  "categories": [
+    {
+      "id": "hamburguesas",
+      "name": "Hamburguesas",
+      "displayName": "Hamburguesas",
+      "description": "Nuestras especialidades al carbón",
+      "sortOrder": 1,
+      "requiresKitchen": true,
+      "kitchenStationType": "grill"
+    },
+    {
+      "id": "agujas-norteñas",
+      "name": "Agujas Norteñas",
+      "displayName": "Agujas Norteñas",
+      "description": "Jugosas agujas de res asadas lentamente",
+      "sortOrder": 2,
+      "requiresKitchen": true,
+      "kitchenStationType": "grill"
+    },
+    {
+      "id": "bebidas",
+      "name": "Refrescos",
+      "displayName": "Refrescos",
+      "description": "Bebidas frías",
+      "sortOrder": 3,
+      "requiresKitchen": false,
+      "kitchenStationType": "bar"
+    }
+  ],
+  "items": [
+    {
+      "id": "sencilla",
+      "categoryId": "hamburguesas",
+      "name": "Sencilla",
+      "shortName": "Sencilla",
+      "description": "Carne marinada con nuestra receta especial y cocinada al carbón. Servida con queso Monterey Jack, lechuga fresca, jitomate, cebolla y pepinillos.",
+      "price": 120,
+      "includes": [
+        "Papas a la francesa",
+        "Queso Monterey Jack",
+        "Lechuga fresca",
+        "Jitomate",
+        "Cebolla",
+        "Pepinillos"
+      ],
+      "excludable": [
+        "Queso",
+        "Lechuga",
+        "Cebolla",
+        "Pepinillos"
+      ],
+      "allergens": [
+        "gluten",
+        "dairy",
+        "sesame"
+      ],
+      "spiceLevel": "mild",
+      "prepTimeMinutes": 12,
+      "batchable": false,
+      "modifiers": [
+        {
+          "id": "extra-queso",
+          "name": "Queso extra",
+          "price": 15,
+          "category": "topping",
+          "allergens": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "tocino-extra",
+          "name": "Tocino extra",
+          "price": 20,
+          "category": "topping",
+          "allergens": []
+        },
+        {
+          "id": "sin-queso",
+          "name": "Sin queso",
+          "price": 0,
+          "category": "removal"
+        }
+      ],
+      "availability": {
+        "isAvailable": true,
+        "daysOfWeekAvailable": [
+          "Friday",
+          "Saturday"
+        ],
+        "timeWindowAvailable": {
+          "startTime": "18:00",
+          "endTime": "21:30"
+        }
+      },
+      "sortOrder": 1,
+      "featured": true
+    },
+    {
+      "id": "tocino",
+      "categoryId": "hamburguesas",
+      "name": "Tocino",
+      "shortName": "Tocino",
+      "description": "Nuestra hamburguesa al carbón acompañada de tocino crujiente, queso Monterey Jack, lechuga, jitomate, cebolla y pepinillos.",
+      "price": 150,
+      "includes": [
+        "Papas a la francesa",
+        "Tocino crujiente",
+        "Queso Monterey Jack",
+        "Lechuga fresca",
+        "Jitomate",
+        "Cebolla",
+        "Pepinillos"
+      ],
+      "excludable": [
+        "Tocino",
+        "Queso",
+        "Lechuga",
+        "Cebolla"
+      ],
+      "allergens": [
+        "gluten",
+        "dairy",
+        "sesame",
+        "pork"
+      ],
+      "spiceLevel": "mild",
+      "prepTimeMinutes": 14,
+      "batchable": false,
+      "modifiers": [
+        {
+          "id": "extra-tocino",
+          "name": "Tocino extra",
+          "price": 20,
+          "category": "topping",
+          "allergens": []
+        },
+        {
+          "id": "extra-queso",
+          "name": "Queso extra",
+          "price": 15,
+          "category": "topping",
+          "allergens": [
+            "dairy"
+          ]
+        }
+      ],
+      "availability": {
+        "isAvailable": true,
+        "daysOfWeekAvailable": [
+          "Friday",
+          "Saturday"
+        ],
+        "timeWindowAvailable": {
+          "startTime": "18:00",
+          "endTime": "21:30"
+        }
+      },
+      "sortOrder": 2,
+      "featured": true
+    },
+    {
+      "id": "doble-carne",
+      "categoryId": "hamburguesas",
+      "name": "Doble Carne",
+      "shortName": "Doble Carne",
+      "description": "Dos jugosas porciones de carne marinada y asada al carbón, acompañadas de queso Monterey Jack, lechuga, jitomate, cebolla y pepinillos.",
+      "price": 180,
+      "includes": [
+        "Papas a la francesa",
+        "Dos porciones de carne",
+        "Queso Monterey Jack",
+        "Lechuga fresca",
+        "Jitomate",
+        "Cebolla",
+        "Pepinillos"
+      ],
+      "excludable": [
+        "Queso",
+        "Lechuga",
+        "Cebolla"
+      ],
+      "allergens": [
+        "gluten",
+        "dairy",
+        "sesame"
+      ],
+      "spiceLevel": "mild",
+      "prepTimeMinutes": 16,
+      "batchable": false,
+      "modifiers": [
+        {
+          "id": "triple-carne",
+          "name": "Triple carne",
+          "price": 60,
+          "category": "additive",
+          "allergens": []
+        },
+        {
+          "id": "extra-queso",
+          "name": "Queso extra",
+          "price": 15,
+          "category": "topping",
+          "allergens": [
+            "dairy"
+          ]
+        }
+      ],
+      "availability": {
+        "isAvailable": true,
+        "daysOfWeekAvailable": [
+          "Friday",
+          "Saturday"
+        ],
+        "timeWindowAvailable": {
+          "startTime": "18:00",
+          "endTime": "21:30"
+        }
+      },
+      "sortOrder": 3,
+      "featured": false
+    },
+    {
+      "id": "agujas-norteñas-orden",
+      "categoryId": "agujas-norteñas",
+      "name": "Agujas Norteñas",
+      "shortName": "Agujas Norteñas",
+      "description": "Jugosas agujas de res con hueso, marinadas con nuestra mezcla especial y asadas lentamente al carbón para lograr un sabor intenso y auténtico. Acompañadas de papas fritas y salsa de chile habanero.",
+      "price": 150,
+      "priceVariations": [
+        {
+          "id": "size-250g",
+          "name": "Orden 250gr",
+          "priceModifier": 150,
+          "modifierType": "replacement"
+        },
+        {
+          "id": "size-500g",
+          "name": "Orden 500gr",
+          "priceModifier": 280,
+          "modifierType": "replacement"
+        }
+      ],
+      "includes": [
+        "Papas fritas",
+        "Salsa de chile habanero",
+        "Pan tostado"
+      ],
+      "excludable": [
+        "Papas",
+        "Salsa"
+      ],
+      "allergens": [],
+      "spiceLevel": "hot",
+      "prepTimeMinutes": 20,
+      "batchable": true,
+      "modifiers": [
+        {
+          "id": "salsa-verde",
+          "name": "Con salsa verde",
+          "price": 0,
+          "category": "sauce"
+        },
+        {
+          "id": "salsa-roja",
+          "name": "Con salsa roja",
+          "price": 0,
+          "category": "sauce"
+        },
+        {
+          "id": "extra-lemon",
+          "name": "Limón extra",
+          "price": 0,
+          "category": "topping"
+        }
+      ],
+      "availability": {
+        "isAvailable": true,
+        "daysOfWeekAvailable": [
+          "Friday",
+          "Saturday"
+        ],
+        "timeWindowAvailable": {
+          "startTime": "18:00",
+          "endTime": "21:30"
+        }
+      },
+      "sortOrder": 1,
+      "featured": false
+    },
+    {
+      "id": "refresco-400ml",
+      "categoryId": "bebidas",
+      "name": "Refrescos",
+      "shortName": "Refresco",
+      "description": "Bebidas frías variadas. Opciones: Coca-Cola, Sprite, Fanta (naranja, limón, uva), Agua mineral.",
+      "price": 25,
+      "priceVariations": [
+        {
+          "id": "size-small",
+          "name": "Pequeño (250ml)",
+          "priceModifier": 20,
+          "modifierType": "replacement"
+        },
+        {
+          "id": "size-medium",
+          "name": "Mediano (400ml)",
+          "priceModifier": 25,
+          "modifierType": "replacement"
+        },
+        {
+          "id": "size-large",
+          "name": "Grande (600ml)",
+          "priceModifier": 35,
+          "modifierType": "replacement"
+        }
+      ],
+      "includes": [],
+      "excludable": [],
+      "allergens": [],
+      "prepTimeMinutes": 0,
+      "batchable": true,
+      "modifiers": [
+        {
+          "id": "con-hielo",
+          "name": "Con hielo",
+          "price": 0,
+          "category": "topping"
+        },
+        {
+          "id": "sin-hielo",
+          "name": "Sin hielo",
+          "price": 0,
+          "category": "removal"
+        },
+        {
+          "id": "con-limon",
+          "name": "Con limón",
+          "price": 0,
+          "category": "topping"
+        }
+      ],
+      "availability": {
+        "isAvailable": true,
+        "daysOfWeekAvailable": [
+          "Friday",
+          "Saturday"
+        ],
+        "timeWindowAvailable": {
+          "startTime": "18:00",
+          "endTime": "22:00"
+        }
+      },
+      "sortOrder": 1,
+      "featured": false
+    }
+  ],
+  "promotions": []
+}

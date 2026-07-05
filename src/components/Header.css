@@ -1,0 +1,75 @@
+.header {
+  background: linear-gradient(135deg, var(--color-charcoal) 0%, var(--color-bg-secondary) 100%);
+  border-bottom: 2px solid var(--color-ember);
+  padding: var(--space-xl) var(--space-lg);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.logo-section {
+  flex: 1;
+}
+
+.restaurant-name {
+  font-size: var(--font-size-3xl);
+  color: var(--color-text-primary);
+  margin: 0 0 var(--space-sm) 0;
+  font-family: var(--font-family-serif);
+}
+
+.tagline {
+  font-size: var(--font-size-sm);
+  color: var(--color-accent);
+  margin: 0;
+  font-weight: 500;
+}
+
+.table-badge {
+  background-color: var(--color-accent);
+  color: var(--color-charcoal);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  white-space: nowrap;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .header {
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .restaurant-name {
+    font-size: var(--font-size-2xl);
+  }
+
+  .table-badge {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    padding: var(--space-md);
+  }
+
+  .restaurant-name {
+    font-size: var(--font-size-xl);
+  }
+}
