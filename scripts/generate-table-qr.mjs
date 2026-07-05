@@ -4,8 +4,8 @@ import QRCode from "qrcode";
 
 const rootDir = process.cwd();
 const configPath = path.join(rootDir, "scripts", "qr-standard.json");
-const outputDir = path.join(rootDir, "public", "qr", "tables");
-const manifestPath = path.join(rootDir, "public", "qr", "manifest.json");
+const outputDir = path.join(rootDir, "artifacts", "qr", "tables");
+const manifestPath = path.join(rootDir, "artifacts", "qr", "manifest.json");
 
 function ensureDir(dirPath) {
   fs.mkdirSync(dirPath, { recursive: true });
@@ -69,8 +69,8 @@ async function generate() {
       tableId,
       url,
       files: {
-        svg: config.svg?.enabled ? `qr/tables/${baseName}.svg` : null,
-        png: config.png?.enabled ? `qr/tables/${baseName}.png` : null
+        svg: config.svg?.enabled ? `artifacts/qr/tables/${baseName}.svg` : null,
+        png: config.png?.enabled ? `artifacts/qr/tables/${baseName}.png` : null
       }
     });
   }
