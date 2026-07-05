@@ -1,0 +1,187 @@
+{
+  "generatedAt": "2026-07-05T07:20:57.001Z",
+  "standard": {
+    "menuBaseUrl": "https://fernandorzv.github.io/zentenos-grill-menu/",
+    "tableParam": "t",
+    "tablePrefix": "T",
+    "tableStart": 1,
+    "tableEnd": 20,
+    "errorCorrectionLevel": "H",
+    "margin": 2,
+    "darkColor": "#0f0f0f",
+    "lightColor": "#ffffff",
+    "png": {
+      "enabled": true,
+      "width": 1024
+    },
+    "svg": {
+      "enabled": true
+    },
+    "print": {
+      "targetPhysicalSizeMm": 40,
+      "label": "Scan to view menu"
+    }
+  },
+  "tables": [
+    {
+      "tableId": "T01",
+      "url": "https://fernandorzv.github.io/zentenos-grill-menu/?t=T01",
+      "files": {
+        "svg": "qr/tables/table-t01.svg",
+        "png": "qr/tables/table-t01.png"
+      }
+    },
+    {
+      "tableId": "T02",
+      "url": "https://fernandorzv.github.io/zentenos-grill-menu/?t=T02",
+      "files": {
+        "svg": "qr/tables/table-t02.svg",
+        "png": "qr/tables/table-t02.png"
+      }
+    },
+    {
+      "tableId": "T03",
+      "url": "https://fernandorzv.github.io/zentenos-grill-menu/?t=T03",
+      "files": {
+        "svg": "qr/tables/table-t03.svg",
+        "png": "qr/tables/table-t03.png"
+      }
+    },
+    {
+      "tableId": "T04",
+      "url": "https://fernandorzv.github.io/zentenos-grill-menu/?t=T04",
+      "files": {
+        "svg": "qr/tables/table-t04.svg",
+        "png": "qr/tables/table-t04.png"
+      }
+    },
+    {
+      "tableId": "T05",
+      "url": "https://fernandorzv.github.io/zentenos-grill-menu/?t=T05",
+      "files": {
+        "svg": "qr/tables/table-t05.svg",
+        "png": "qr/tables/table-t05.png"
+      }
+    },
+    {
+      "tableId": "T06",
+      "url": "https://fernandorzv.github.io/zentenos-grill-menu/?t=T06",
+      "files": {
+        "svg": "qr/tables/table-t06.svg",
+        "png": "qr/tables/table-t06.png"
+      }
+    },
+    {
+      "tableId": "T07",
+      "url": "https://fernandorzv.github.io/zentenos-grill-menu/?t=T07",
+      "files": {
+        "svg": "qr/tables/table-t07.svg",
+        "png": "qr/tables/table-t07.png"
+      }
+    },
+    {
+      "tableId": "T08",
+      "url": "https://fernandorzv.github.io/zentenos-grill-menu/?t=T08",
+      "files": {
+        "svg": "qr/tables/table-t08.svg",
+        "png": "qr/tables/table-t08.png"
+      }
+    },
+    {
+      "tableId": "T09",
+      "url": "https://fernandorzv.github.io/zentenos-grill-menu/?t=T09",
+      "files": {
+        "svg": "qr/tables/table-t09.svg",
+        "png": "qr/tables/table-t09.png"
+      }
+    },
+    {
+      "tableId": "T10",
+      "url": "https://fernandorzv.github.io/zentenos-grill-menu/?t=T10",
+      "files": {
+        "svg": "qr/tables/table-t10.svg",
+        "png": "qr/tables/table-t10.png"
+      }
+    },
+    {
+      "tableId": "T11",
+      "url": "https://fernandorzv.github.io/zentenos-grill-menu/?t=T11",
+      "files": {
+        "svg": "qr/tables/table-t11.svg",
+        "png": "qr/tables/table-t11.png"
+      }
+    },
+    {
+      "tableId": "T12",
+      "url": "https://fernandorzv.github.io/zentenos-grill-menu/?t=T12",
+      "files": {
+        "svg": "qr/tables/table-t12.svg",
+        "png": "qr/tables/table-t12.png"
+      }
+    },
+    {
+      "tableId": "T13",
+      "url": "https://fernandorzv.github.io/zentenos-grill-menu/?t=T13",
+      "files": {
+        "svg": "qr/tables/table-t13.svg",
+        "png": "qr/tables/table-t13.png"
+      }
+    },
+    {
+      "tableId": "T14",
+      "url": "https://fernandorzv.github.io/zentenos-grill-menu/?t=T14",
+      "files": {
+        "svg": "qr/tables/table-t14.svg",
+        "png": "qr/tables/table-t14.png"
+      }
+    },
+    {
+      "tableId": "T15",
+      "url": "https://fernandorzv.github.io/zentenos-grill-menu/?t=T15",
+      "files": {
+        "svg": "qr/tables/table-t15.svg",
+        "png": "qr/tables/table-t15.png"
+      }
+    },
+    {
+      "tableId": "T16",
+      "url": "https://fernandorzv.github.io/zentenos-grill-menu/?t=T16",
+      "files": {
+        "svg": "qr/tables/table-t16.svg",
+        "png": "qr/tables/table-t16.png"
+      }
+    },
+    {
+      "tableId": "T17",
+      "url": "https://fernandorzv.github.io/zentenos-grill-menu/?t=T17",
+      "files": {
+        "svg": "qr/tables/table-t17.svg",
+        "png": "qr/tables/table-t17.png"
+      }
+    },
+    {
+      "tableId": "T18",
+      "url": "https://fernandorzv.github.io/zentenos-grill-menu/?t=T18",
+      "files": {
+        "svg": "qr/tables/table-t18.svg",
+        "png": "qr/tables/table-t18.png"
+      }
+    },
+    {
+      "tableId": "T19",
+      "url": "https://fernandorzv.github.io/zentenos-grill-menu/?t=T19",
+      "files": {
+        "svg": "qr/tables/table-t19.svg",
+        "png": "qr/tables/table-t19.png"
+      }
+    },
+    {
+      "tableId": "T20",
+      "url": "https://fernandorzv.github.io/zentenos-grill-menu/?t=T20",
+      "files": {
+        "svg": "qr/tables/table-t20.svg",
+        "png": "qr/tables/table-t20.png"
+      }
+    }
+  ]
+}
