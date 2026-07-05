@@ -1,0 +1,158 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-07-05T00:00:00Z",
+  "effectiveDate": "2026-07-05",
+  "contentGovernance": {
+    "status": "locked",
+    "owner": "Zentenos Grill Ops",
+    "approvedBy": "Content Owner",
+    "approvedAt": "2026-07-05T00:00:00Z",
+    "changePolicy": "All edits must update lastUpdated and be approved before deploy"
+  },
+  "restaurant": {
+    "id": "zentenos-grill",
+    "name": "Zenteno's Grill",
+    "tagline": "Asado al Carbon",
+    "phone": "7775041335",
+    "whatsappNumber": "7775041335",
+    "address": "[Your restaurant address]",
+    "currency": "MXN",
+    "serviceHours": [
+      { "dayOfWeek": "Monday", "isOpen": false },
+      { "dayOfWeek": "Tuesday", "isOpen": false },
+      { "dayOfWeek": "Wednesday", "isOpen": false },
+      { "dayOfWeek": "Thursday", "isOpen": false },
+      { "dayOfWeek": "Friday", "isOpen": true, "openTime": "18:00", "closeTime": "22:00" },
+      { "dayOfWeek": "Saturday", "isOpen": true, "openTime": "18:00", "closeTime": "22:00" },
+      { "dayOfWeek": "Sunday", "isOpen": false }
+    ]
+  },
+  "categories": [
+    {
+      "id": "hamburguesas",
+      "name": "Hamburguesas",
+      "displayName": "Hamburguesas",
+      "description": "Nuestras especialidades al carbon",
+      "sortOrder": 1
+    },
+    {
+      "id": "agujas-nortenas",
+      "name": "Agujas Nortenas",
+      "displayName": "Agujas Nortenas",
+      "description": "Jugosas agujas de res asadas lentamente",
+      "sortOrder": 2
+    },
+    {
+      "id": "bebidas",
+      "name": "Refrescos",
+      "displayName": "Refrescos",
+      "description": "Bebidas frias",
+      "sortOrder": 3
+    }
+  ],
+  "items": [
+    {
+      "id": "sencilla",
+      "categoryId": "hamburguesas",
+      "name": "Sencilla",
+      "shortName": "Sencilla",
+      "description": "Carne marinada con nuestra receta especial y cocinada al carbon. Servida con queso Monterey Jack, lechuga fresca, jitomate, cebolla y pepinillos.",
+      "price": 120,
+      "includes": ["Papas a la francesa", "Queso Monterey Jack", "Lechuga fresca", "Jitomate", "Cebolla", "Pepinillos"],
+      "excludable": ["Queso", "Lechuga", "Cebolla", "Pepinillos"],
+      "allergens": ["gluten", "dairy", "sesame"],
+      "spiceLevel": "mild",
+      "availability": {
+        "isAvailable": true,
+        "daysOfWeekAvailable": ["Friday", "Saturday"],
+        "timeWindowAvailable": { "startTime": "18:00", "endTime": "21:30" }
+      },
+      "sortOrder": 1,
+      "featured": true
+    },
+    {
+      "id": "tocino",
+      "categoryId": "hamburguesas",
+      "name": "Tocino",
+      "shortName": "Tocino",
+      "description": "Nuestra hamburguesa al carbon acompanada de tocino crujiente, queso Monterey Jack, lechuga, jitomate, cebolla y pepinillos.",
+      "price": 150,
+      "includes": ["Papas a la francesa", "Tocino crujiente", "Queso Monterey Jack", "Lechuga fresca", "Jitomate", "Cebolla", "Pepinillos"],
+      "excludable": ["Tocino", "Queso", "Lechuga", "Cebolla"],
+      "allergens": ["gluten", "dairy", "sesame"],
+      "spiceLevel": "mild",
+      "availability": {
+        "isAvailable": true,
+        "daysOfWeekAvailable": ["Friday", "Saturday"],
+        "timeWindowAvailable": { "startTime": "18:00", "endTime": "21:30" }
+      },
+      "sortOrder": 2,
+      "featured": true
+    },
+    {
+      "id": "doble-carne",
+      "categoryId": "hamburguesas",
+      "name": "Doble Carne",
+      "shortName": "Doble Carne",
+      "description": "Dos jugosas porciones de carne marinada y asada al carbon, acompanadas de queso Monterey Jack, lechuga, jitomate, cebolla y pepinillos.",
+      "price": 180,
+      "includes": ["Papas a la francesa", "Dos porciones de carne", "Queso Monterey Jack", "Lechuga fresca", "Jitomate", "Cebolla", "Pepinillos"],
+      "excludable": ["Queso", "Lechuga", "Cebolla"],
+      "allergens": ["gluten", "dairy", "sesame"],
+      "spiceLevel": "mild",
+      "availability": {
+        "isAvailable": true,
+        "daysOfWeekAvailable": ["Friday", "Saturday"],
+        "timeWindowAvailable": { "startTime": "18:00", "endTime": "21:30" }
+      },
+      "sortOrder": 3,
+      "featured": false
+    },
+    {
+      "id": "agujas-nortenas-orden",
+      "categoryId": "agujas-nortenas",
+      "name": "Agujas Nortenas",
+      "shortName": "Agujas Nortenas",
+      "description": "Jugosas agujas de res con hueso, marinadas con nuestra mezcla especial y asadas lentamente al carbon. Acompanadas de papas fritas y salsa de chile habanero.",
+      "price": 150,
+      "priceVariations": [
+        { "id": "size-250g", "name": "Orden 250gr", "priceModifier": 150, "modifierType": "replacement" },
+        { "id": "size-500g", "name": "Orden 500gr", "priceModifier": 280, "modifierType": "replacement" }
+      ],
+      "includes": ["Papas fritas", "Salsa de chile habanero", "Pan tostado"],
+      "excludable": ["Papas", "Salsa"],
+      "allergens": [],
+      "spiceLevel": "hot",
+      "availability": {
+        "isAvailable": true,
+        "daysOfWeekAvailable": ["Friday", "Saturday"],
+        "timeWindowAvailable": { "startTime": "18:00", "endTime": "21:30" }
+      },
+      "sortOrder": 1,
+      "featured": false
+    },
+    {
+      "id": "refresco-400ml",
+      "categoryId": "bebidas",
+      "name": "Refrescos",
+      "shortName": "Refresco",
+      "description": "Bebidas frias variadas. Opciones: Coca-Cola, Sprite, Fanta, Agua mineral.",
+      "price": 25,
+      "priceVariations": [
+        { "id": "size-small", "name": "Pequeno (250ml)", "priceModifier": 20, "modifierType": "replacement" },
+        { "id": "size-medium", "name": "Mediano (400ml)", "priceModifier": 25, "modifierType": "replacement" },
+        { "id": "size-large", "name": "Grande (600ml)", "priceModifier": 35, "modifierType": "replacement" }
+      ],
+      "includes": [],
+      "excludable": [],
+      "allergens": [],
+      "availability": {
+        "isAvailable": true,
+        "daysOfWeekAvailable": ["Friday", "Saturday"],
+        "timeWindowAvailable": { "startTime": "18:00", "endTime": "22:00" }
+      },
+      "sortOrder": 1,
+      "featured": false
+    }
+  ]
+}
