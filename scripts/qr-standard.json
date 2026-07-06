@@ -1,0 +1,22 @@
+{
+  "menuBaseUrl": "https://fernandorzv.github.io/zentenos-grill-menu/",
+  "tableParam": "t",
+  "tablePrefix": "T",
+  "tableStart": 1,
+  "tableEnd": 20,
+  "errorCorrectionLevel": "H",
+  "margin": 2,
+  "darkColor": "#0f0f0f",
+  "lightColor": "#ffffff",
+  "png": {
+    "enabled": true,
+    "width": 1024
+  },
+  "svg": {
+    "enabled": true
+  },
+  "print": {
+    "targetPhysicalSizeMm": 40,
+    "label": "Scan to view menu"
+  }
+}
