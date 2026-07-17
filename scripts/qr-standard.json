@@ -1,4 +1,5 @@
 {
+  "restaurantName": "Zenteno's Grill",
   "menuBaseUrl": "https://fernandorzv.github.io/zentenos-grill-menu/",
   "tableParam": "t",
   "tablePrefix": "T",
@@ -14,6 +15,11 @@
   },
   "svg": {
     "enabled": true
+  },
+  "tableLifecycle": {
+    "activate": [],
+    "deactivate": [],
+    "rename": {}
   },
   "print": {
     "targetPhysicalSizeMm": 40,

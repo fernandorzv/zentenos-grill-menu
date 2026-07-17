@@ -7,6 +7,7 @@
     "dev": "vite",
     "menu:validate": "node scripts/validate-public-menu.mjs",
     "qr:generate": "node scripts/generate-table-qr.mjs",
+    "qr:print": "npm run qr:generate",
     "build": "npm run menu:validate && npm run qr:generate && vite build",
     "preview": "vite preview"
   },

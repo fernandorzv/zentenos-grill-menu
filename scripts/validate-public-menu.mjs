@@ -51,9 +51,27 @@ function validateMenu(menu) {
   const errors = [];
   const warnings = [];
 
+  const menuVersion = requireField(menu, "menuVersion", errors);
+  const updatedAt = requireField(menu, "updatedAt", errors);
   requireField(menu, "version", errors);
   requireField(menu, "lastUpdated", errors);
   requireField(menu, "effectiveDate", errors);
+
+  if (menuVersion !== undefined && !isNonEmptyString(menuVersion)) {
+    errors.push("menuVersion must be a non-empty string");
+  }
+
+  if (updatedAt !== undefined && !isNonEmptyString(updatedAt)) {
+    errors.push("updatedAt must be a non-empty string");
+  }
+
+  if (isNonEmptyString(menuVersion) && isNonEmptyString(menu.version) && menuVersion !== menu.version) {
+    errors.push("menuVersion and version must match when both are present");
+  }
+
+  if (isNonEmptyString(updatedAt) && isNonEmptyString(menu.lastUpdated) && updatedAt !== menu.lastUpdated) {
+    errors.push("updatedAt and lastUpdated must match when both are present");
+  }
 
   const governance = requireField(menu, "contentGovernance", errors);
   if (governance) {

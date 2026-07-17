@@ -29,7 +29,7 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install --no-fund --no-audit
+        run: npm ci --no-fund --no-audit
 
       - name: Validate public menu
         run: npm run menu:validate
@@ -38,6 +38,8 @@ jobs:
         run: npm run qr:generate
 
       - name: Build application
+        env:
+          VITE_GIT_SHA: ${{ github.sha }}
         run: npm run build
 
       - name: Upload Pages artifact

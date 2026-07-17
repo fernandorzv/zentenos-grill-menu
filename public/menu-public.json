@@ -1,12 +1,14 @@
 {
-  "version": "1.0.0",
-  "lastUpdated": "2026-07-05T00:00:00Z",
+  "menuVersion": "1.0.2",
+  "updatedAt": "2026-07-16T00:00:00Z",
+  "version": "1.0.2",
+  "lastUpdated": "2026-07-16T00:00:00Z",
   "effectiveDate": "2026-07-05",
   "contentGovernance": {
     "status": "locked",
     "owner": "Zentenos Grill Ops",
     "approvedBy": "Content Owner",
-    "approvedAt": "2026-07-05T00:00:00Z",
+    "approvedAt": "2026-07-16T00:00:00Z",
     "changePolicy": "All edits must update lastUpdated and be approved before deploy"
   },
   "restaurant": {
@@ -15,7 +17,8 @@
     "tagline": "Asado al Carbon",
     "phone": "7775041335",
     "whatsappNumber": "7775041335",
-    "address": "[Your restaurant address]",
+    "address": "Bo. de Los Arcos 2, Las Fincas, Jiutepec, Mor.",
+    "mapsUrl": "https://maps.app.goo.gl/FTpkE4GnUgbMzyzT7",
     "currency": "MXN",
     "serviceHours": [
       { "dayOfWeek": "Monday", "isOpen": false },
