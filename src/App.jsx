@@ -3,7 +3,6 @@ import DrinkRow from './components/menu/DrinkRow';
 import FeatureProduct from './components/menu/FeatureProduct';
 import HamburgersSection from './components/menu/HamburgersSection';
 import HeroSection from './components/menu/HeroSection';
-import PromoBanner from './components/menu/PromoBanner';
 import StickyCTA from './components/menu/StickyCTA';
 import VisitSection from './components/menu/VisitSection';
 import {
@@ -112,7 +111,6 @@ export default function App() {
   const assetUrls = {
     brand: getAssetUrl('brand/zentenos-emblem.png'),
     hero: getAssetUrl('hero/hero-grill-flame.jpg'),
-    promo: getAssetUrl('products/promo-meat-corona.png'),
     agujas: getAssetUrl('products/chuck-eye-steak.png'),
     map: getAssetUrl('map/dark-map-bg.jpg'),
     fries: getAssetUrl(`ui/${UI_ICON_FILES.fries}`),
@@ -143,7 +141,6 @@ export default function App() {
       />
 
       <div className="zg-container" id="menu-sections">
-        <PromoBanner promoImageUrl={assetUrls.promo} />
         <HamburgersSection hamburguesas={hamburguesas} iconFriesUrl={assetUrls.fries} restaurant={restaurant} />
         <FeatureProduct agujaImageUrl={assetUrls.agujas} agujaItem={agujaItem} restaurant={restaurant} />
         <DrinkRow iconDrinkUrl={assetUrls.drink} refrescoItem={refrescoItem} restaurant={restaurant} />
@@ -168,6 +165,7 @@ export default function App() {
     </main>
   );
 }
+
 
 
 
